@@ -23,6 +23,17 @@ namespace Kobold
         public MainWindow()
         {
             InitializeComponent();
+            BeginOneDotONE();
+        }
+
+        public void BeginOneDotONE()
+        {
+            xTextAdventureOutput.Text = "Hello, I have been made to give you a fun and exiting new experiance when it comes to text adventures. I want to be the perfect and most well made AI that generates dungeons for the player to explore givin their wants and needs. \n\n To begin please state that you would like to begin the text adventure and the number of levels that you would like in it.";
+        }
+
+        private void xSubmit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

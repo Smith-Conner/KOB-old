@@ -40,7 +40,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
+				<RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -56,13 +56,12 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <!--#endregion-->
-            
-            
+			
             <!--#region Display-->
             <TextBox x:Name="xTextAdventureOutput" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="8" Grid.RowSpan="10" BorderBrush="Black" BorderThickness="2.5" TextWrapping="Wrap" IsReadOnly="True" Text=""/>
             <TextBox x:Name="xWebScraperOutput" Grid.Column="10" Grid.Row="1" Grid.ColumnSpan="9" Grid.RowSpan="10" BorderBrush="Black" BorderThickness="2.5" TextWrapping="Wrap" IsReadOnly="True" Text=""/>
-            
-            <TextBlock Text="Text Adventure" Grid.Column="3" Grid.ColumnSpan="4" FontSize="18" FontWeight="Black" TextAlignment="Center"/>
+			
+			<TextBlock Text="Text Adventure" Grid.Column="3" Grid.ColumnSpan="4" FontSize="18" FontWeight="Black" TextAlignment="Center"/>
             <TextBlock Text="Web Scraper" Grid.Column="12" Grid.ColumnSpan="5" FontSize="18" FontWeight="Black" TextAlignment="Center"/>
             <!--#endregion-->
             
@@ -72,16 +71,17 @@
             <!--#endregion-->
             
             <!--#region Buttons-->
-            <Button x:Name="xYes" Grid.Column="1" Grid.Row="16" Grid.ColumnSpan="2" Content="Yes" FontSize="24" />
-            <Button x:Name="xNo" Grid.Column="3" Grid.Row="16" Grid.ColumnSpan="2" Content="No" FontSize="24"/>
+			<Button x:Name="xYes" Grid.Column="1" Grid.Row="18" Grid.ColumnSpan="2" Content="Yes" FontSize="24" />
+            <Button x:Name="xNo" Grid.Column="3" Grid.Row="18" Grid.ColumnSpan="2" Content="No" FontSize="24"/>
             <Button x:Name="xRepeat" Grid.Column="5" Grid.Row="16" Grid.ColumnSpan="2" Content="Repeat" FontSize="20" />
-            <Button x:Name="xSubmit" Grid.Column="7" Grid.Row="16" Grid.ColumnSpan="2" Content="Submit" FontSize="20" />
+            <Button x:Name="xSubmit" Grid.Column="7" Grid.Row="16" Grid.ColumnSpan="2" Content="Submit" FontSize="20" Click="xSubmit_Click" />
+            <Button x:Name="xNext" Grid.Column="3" Grid.Row="16" Grid.ColumnSpan="2" Content="Next" FontSize="20" />
 
             <Button x:Name="xSubmitScraper" Grid.Column="17" Grid.Row="16" Grid.ColumnSpan="2" Content="Submit" FontSize="20" />
             <Button x:Name="xStopScraper" Grid.Column="15" Grid.Row="16" Grid.ColumnSpan="2" Content="Stop" FontSize="20" />
             <Button x:Name="xStartScraper" Grid.Column="13" Grid.Row="16" Grid.ColumnSpan="2" Content="Start" FontSize="20" />
             <!--#endregion-->
-            
+          
         </Grid>
 
     </Grid>

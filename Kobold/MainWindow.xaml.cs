@@ -20,6 +20,9 @@ namespace Kobold
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int i;
+        public string PlayerSubmitTA;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,12 +31,29 @@ namespace Kobold
 
         public void BeginOneDotONE()
         {
-            xTextAdventureOutput.Text = "Hello, I have been made to give you a fun and exiting new experiance when it comes to text adventures. I want to be the perfect and most well made AI that generates dungeons for the player to explore givin their wants and needs. \n\n To begin please state that you would like to begin the text adventure and the number of levels that you would like in it.";
-        }
+            //xTextAdventureOutput.Text = "Hello, I have been made to give you a fun and exiting new experiance when it comes to text adventures. I want to be the perfect and most well made AI that generates dungeons for the player to explore givin their wants and needs. \n\n To begin please state that you would like to begin the text adventure and the number of levels that you would like in it.";
 
-        private void xSubmit_Click(object sender, RoutedEventArgs e)
+        }
+        
+        
+        public void method1()
         {
 
+        }
+        public void method2()
+        {
+
+        }
+
+
+        
+        private void xSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            PlayerSubmitTA = xTextAdventureUserImput.Text;
+        }
+
+        private void xNext_Click(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

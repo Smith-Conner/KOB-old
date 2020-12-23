@@ -20,8 +20,15 @@ namespace Kobold
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Event Info
+        public string EventEnviromentType;
+        public int beginLevelSelect;
+        public int LevelSelector;
+
         public int i;
         public string PlayerSubmitTA;
+        public int PlayerLevel = 1
+        Random ran = new Random();
 
         public MainWindow()
         {
@@ -33,12 +40,14 @@ namespace Kobold
             if (e.Key == Key.Return)
             {
                 PlayerSubmitTA = xTextAdventureUserImput.Text.ToLower();
+                xTextAdventureUserImput.Text = "";
                 Keys();
             }
         }
         private void xSubmit_Click(object sender, RoutedEventArgs e)
         {
             PlayerSubmitTA = xTextAdventureUserImput.Text.ToLower();
+            xTextAdventureUserImput.Text = "";
             Keys();
         }
         private void xClear_Click(object sender, RoutedEventArgs e)
@@ -61,6 +70,8 @@ namespace Kobold
         public void BeginOneDotThree()
         {
             xTextAdventureOutput.Text = "See isn't this fun. Already picking the stuff you want to do. Do know that it's going to get more free in your choices";
+            beginLevelSelect = ran.Next(0, 0);
+            PickDungeonTypeStart();
         }
 
 
@@ -68,6 +79,47 @@ namespace Kobold
 
         // TODO Create a dungeon event
         #region //Dungeon Events
+        public void PickDungeonTypeStart()
+        {
+            switch (beginLevelSelect)
+            {
+                case 0:
+                    CoastControl();
+                    break;
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+            }
+        }
+        #region //Level 1 events
+
+        #region // Coast Events
+        public void CoastControl()
+        {
+            
+            if (PlayerLevel == 1)
+            {
+                LevelSelector = ran.Next(0, 0);
+                switch (LevelSelector)
+                {
+                    case 0:
+                        Lvl1CoastEvent1();
+                        break;
+                }
+            }
+        }
+        public void Lvl1CoastEvent1()
+        {
+            EventEnviromentType = "Coast";
+            xTextAdventureOutput.Text = "Funny";
+        }
+        #endregion
+        #endregion
+
+
 
         #endregion
 

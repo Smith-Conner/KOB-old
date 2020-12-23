@@ -106,7 +106,7 @@ namespace Kobold
                 switch (LevelSelector)
                 {
                     case 0:
-                        Lvl1CoastEvent1();
+                        Lvl1CoastEvent1(); 
                         break;
                 }
             }
